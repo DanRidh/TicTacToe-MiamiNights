@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color:#060614;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    margin:0;
+}
+
+.container {
+    margin: 5vh;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tic {
+    color: #ff3399;
+}
+
+#tac {
+    color: #3366ff;
+}
+
+#toe {
+    color: #666699;
+}
+
+#board {
+    display: grid;
+    background-color:#060614;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c27;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #666699;
+}
+
+.X {
+    color:  #ff3399;
+    font-size: 50px;
+}
+
+.O {
+    color: #3366ff;
+    font-size: 50px;
+}
+
+.won {
+    background-color: #666699;
+    cursor: default;
+}
+
+.finished {
+    cursor: default;
+}
+
+.finished:hover {
+    background-color: #0c0c27;
+}
+
+#restart {
+    margin-top: 3vh;
+    font-family: 'Permanent Marker', cursive;
+    color: #666699;
+    background: none;
+    border: none;
+    font-size: 15px;
+    
+}
+
+#restart:hover {
+    cursor: pointer;
+    color: #ff3399;
+    text-shadow: 2px 2px #3366ff;
+}
+
+#vsPlayer {
+    margin-bottom: 3vh;
+    font-family: 'Permanent Marker', cursive;
+    color: #666699;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+#vsPlayer:hover {
+    cursor: pointer;
+    color: #ff3399;
+    text-shadow: 2px 2px #3366ff;
+}
+
+#vsAI {
+    margin-bottom: 3vh;
+    font-family: 'Permanent Marker', cursive;
+    color: #666699;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+#vsAI:hover {
+    cursor: pointer;
+    color: #ff3399;
+    text-shadow: 2px 2px #3366ff;
+}
